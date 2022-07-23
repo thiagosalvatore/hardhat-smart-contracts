@@ -1,4 +1,15 @@
 {
+  "name": "hardhat-fund-me",
+  "author": "Thiago Salvatore",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test:integration": "yarn hardhat test --network rinkeby",
+    "lint": "yarn solhint 'contracts/*.sol'",
+    "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
+    "format": "yarn prettier --write .",
+    "coverage": "yarn hardhat coverage"
+  },
   "devDependencies": {
     "@chainlink/contracts": "^0.4.1",
     "@ethersproject/abi": "^5.4.7",
